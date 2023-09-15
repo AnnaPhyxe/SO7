@@ -1,0 +1,3 @@
+C:/Users/annab/OneDrive/Skrivebord/Programmering 2023/SO7/build/CMakeFiles/SO7.dir
+C:/Users/annab/OneDrive/Skrivebord/Programmering 2023/SO7/build/CMakeFiles/edit_cache.dir
+C:/Users/annab/OneDrive/Skrivebord/Programmering 2023/SO7/build/CMakeFiles/rebuild_cache.dir

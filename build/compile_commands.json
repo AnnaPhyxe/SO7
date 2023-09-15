@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/annab/OneDrive/Skrivebord/Programmering 2023/SO7/build",
+  "command": "C:\\Users\\annab\\scoop\\apps\\mingw\\current\\bin\\g++.exe  @CMakeFiles/SO7.dir/includes_CXX.rsp -g -o CMakeFiles\\SO7.dir\\main.cpp.obj -c \"C:\\Users\\annab\\OneDrive\\Skrivebord\\Programmering 2023\\SO7\\main.cpp\"",
+  "file": "C:/Users/annab/OneDrive/Skrivebord/Programmering 2023/SO7/main.cpp",
+  "output": "CMakeFiles/SO7.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/annab/OneDrive/Skrivebord/Programmering 2023/SO7/build",
+  "command": "C:\\Users\\annab\\scoop\\apps\\mingw\\current\\bin\\g++.exe  @CMakeFiles/SO7.dir/includes_CXX.rsp -g -o CMakeFiles\\SO7.dir\\Game.cpp.obj -c \"C:\\Users\\annab\\OneDrive\\Skrivebord\\Programmering 2023\\SO7\\Game.cpp\"",
+  "file": "C:/Users/annab/OneDrive/Skrivebord/Programmering 2023/SO7/Game.cpp",
+  "output": "CMakeFiles/SO7.dir/Game.cpp.obj"
+}
+]
