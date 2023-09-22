@@ -31,18 +31,18 @@ void Game::run() {
 
 void Game::setup() {
     this->videomode.height = 1080;
-    this->videomode.width = 1920;
+    this->videomode.width = 1080;
     this->window = new sf::RenderWindow(this->videomode, "SO7");
     this->window->setFramerateLimit(60);
 
-    this->x0 = -5;
+    this->x0 = 1.5;
 
     precision = 1e-6;
-    func = [](double x) -> double { return 0.5 * (x - sin(x)) - 0.7;};
-    func_derivative = [](double x) -> double { return 0.5 - (cos(x)/2);};
+    func = [](double x) -> double { return log(x + 1);};
+    func_derivative = [](double x) -> double { return 1/(x + 1);};
 
-    this->coordinateSystemMin = -20.0;
-    this->coordinateSystemMax = 20.0;
+    this->coordinateSystemMin = -10.0;
+    this->coordinateSystemMax = 10.0;
     this->dist_lines_axis = 1.0;
     this->iterationCount = 0;
 
@@ -50,7 +50,9 @@ void Game::setup() {
 }
 
 void Game::initGraph(){
-    // Create a graphical representation of the function
+    /*
+        Tegner grafen der findes et nulpunkt på 
+    */
     graph.setPrimitiveType(sf::LineStrip);
     for (double x = coordinateSystemMin; x <= coordinateSystemMax; x += 0.01) {
         double y = func(x);
@@ -99,8 +101,8 @@ double Game::root(double x0, double precision, std::function<double(double)> fun
 }
 
 void Game::drawText(){
-    initText("f(x) = 0.5 * (x - sin(x)) - 0.7", 10.f, 10.f, 35.f, sf::Color::Red);
-    initText("Antal iterationer: " + std::to_string(iterationCount), 10.f, 70.f, 35.f, sf::Color(0, 150, 255, 255));
+    initText("f(x) = log(x + 1)", 10.f, 10.f, 35.f, sf::Color::Red);
+    initText("Antal iterationer: " + std::to_string(iterationCount), 10.f, 70.f, 35.f, sf::Color::White);
     initText("Nulpunkt: " + std::to_string(root(x0, precision, func, func_derivative)), 10.f, 120.0f, 35.f, sf::Color::White);
     initText("x0: " + std::to_string(x0), 10.f, 170.f, 35.f, sf::Color::White);
     initText("y", (videomode.width/2.0f) - 30.f, 5.f, 35.f, sf::Color::White);
@@ -108,34 +110,21 @@ void Game::drawText(){
 }
 
 void Game::drawAxis(){
-     // Draw the x-axis
-    sf::VertexArray xAxis(sf::Lines, 2);
-    xAxis[0] = sf::Vertex(sf::Vector2f(0, videomode.height/2.0f), sf::Color::White);
-    xAxis[1] = sf::Vertex(sf::Vector2f(videomode.width, videomode.height/2.0f), sf::Color::White);
-    window->draw(xAxis);
+    line xAxis(0, videomode.height/2.0f, videomode.width, videomode.height/2.0f, sf::Color::White);
+    line yAxis(videomode.width/2.0f, 0, videomode.width/2.0f, videomode.height, sf::Color::White);
+    xAxis.draw_line(*window);
+    yAxis.draw_line(*window);
 
-    // Draw the y-axis
-    sf::VertexArray yAxis(sf::Lines, 2);
-    yAxis[0] = sf::Vertex(sf::Vector2f(videomode.width/2.0f, 0), sf::Color::White);
-    yAxis[1] = sf::Vertex(sf::Vector2f(videomode.width/2.0f, videomode.height), sf::Color::White);
-    window->draw(yAxis);
-
-    // Draw vertical lines on the x-axis
-    for (float x = coordinateSystemMin; x <= coordinateSystemMax; x += dist_lines_axis) {
+    for(float x = coordinateSystemMin; x <= coordinateSystemMax; x += dist_lines_axis){
         float xPos = (x - coordinateSystemMin) / (coordinateSystemMax - coordinateSystemMin) * videomode.width;
-        sf::VertexArray line(sf::Lines, 2);
-        line[0] = sf::Vertex(sf::Vector2f(xPos, videomode.height / 2.0f - 5.0f), sf::Color::White);
-        line[1] = sf::Vertex(sf::Vector2f(xPos, videomode.height / 2.0f + 5.0f), sf::Color::White);
-        window->draw(line);
+        line line(xPos, videomode.height / 2.0f - 5.0f, xPos, videomode.height / 2.0f + 5.0f, sf::Color::White);
+        line.draw_line(*window);
     }
 
-    // Draw horizontal lines on the y-axis
-    for (float y = coordinateSystemMin; y <= coordinateSystemMax; y += dist_lines_axis) {
+    for(float y = coordinateSystemMin; y <= coordinateSystemMax; y += dist_lines_axis){
         float yPos = videomode.height - (y - coordinateSystemMin) / (coordinateSystemMax - coordinateSystemMin) * videomode.height;
-        sf::VertexArray line(sf::Lines, 2);
-        line[0] = sf::Vertex(sf::Vector2f(videomode.width / 2.0f - 5.0f, yPos), sf::Color::White);
-        line[1] = sf::Vertex(sf::Vector2f(videomode.width / 2.0f + 5.0f, yPos), sf::Color::White);
-        window->draw(line);
+        line line(videomode.width / 2.0f - 5.0f, yPos, videomode.width / 2.0f + 5.0f, yPos, sf::Color::White);
+        line.draw_line(*window);
     }
 }
 
@@ -144,17 +133,13 @@ void Game::drawTangents(const std::vector<IterationData>& iterations) {
     points.clear();
 
     for (const IterationData& data : iterations) {
-        sf::VertexArray tangent(sf::Lines, 2);
-        
         float tangentX1 = (data.tangentX1 - coordinateSystemMin) / (coordinateSystemMax - coordinateSystemMin) * videomode.width;
         float tangentY1 = videomode.height - (data.tangentY1 - coordinateSystemMin) / (coordinateSystemMax - coordinateSystemMin) * videomode.height;
         float tangentX2 = (data.tangentX2 - coordinateSystemMin) / (coordinateSystemMax - coordinateSystemMin) * videomode.width;
         float tangentY2 = videomode.height - (data.tangentY2 - coordinateSystemMin) / (coordinateSystemMax - coordinateSystemMin) * videomode.height;
 
-        tangent[0] = sf::Vertex(sf::Vector2f(tangentX1, tangentY1), sf::Color(0, 150, 255, 255));
-        tangent[1] = sf::Vertex(sf::Vector2f(tangentX2, tangentY2), sf::Color(0, 150, 255, 255));
-
-        tangents.push_back(tangent);
+        line tangent_line(tangentX1, tangentY1, tangentX2, tangentY2, sf::Color(0, 150, 255, 255));
+        tangents.push_back(tangent_line);
 
         sf::CircleShape point(5);
         point.setFillColor(sf::Color(0, 150, 255, 255));
@@ -162,11 +147,11 @@ void Game::drawTangents(const std::vector<IterationData>& iterations) {
         points.push_back(point);
     }
 
-    for (const sf::VertexArray& tangent : tangents) {
-        window->draw(tangent);
+    for(line& tangent : tangents){
+        tangent.draw_line(*window);
     }
 
-    for (const sf::CircleShape& circle : points) {
+    for(const sf::CircleShape& circle : points){
         window->draw(circle);
     }
 }

@@ -1,14 +1,24 @@
 CMakeFiles/SO7.dir/Game.cpp.obj: \
  C:\Users\annab\OneDrive\Skrivebord\Programmering\ 2023\SO7\Game.cpp \
  C:\Users\annab\OneDrive\Skrivebord\Programmering\ 2023\SO7\Game.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/string \
+ C:\Users\annab\OneDrive\Skrivebord\Programmering\ 2023\SO7\line.h \
+ C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Graphics.hpp \
+ C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Window.hpp \
+ C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/System.hpp \
+ C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Config.hpp \
+ C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/System/Clock.hpp \
+ C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/System/Export.hpp \
+ C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/System/Time.hpp \
+ C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/System/Err.hpp \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ostream \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ios \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iosfwd \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/pstl/pstl_config.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stringfwd.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/memoryfwd.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/char_traits.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/postypes.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cwchar \
  C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/wchar.h \
@@ -24,31 +34,61 @@ CMakeFiles/SO7.dir/Game.cpp.obj: \
  C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/_mingw_stat64.h \
  C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/swprintf.inl \
  C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/exception \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception_ptr.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception_defines.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cxxabi_init_exception.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stddef.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/stddef.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/typeinfo \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/hash_bytes.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/new \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/move.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/type_traits \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/nested_exception.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/char_traits.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdint \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdint.h \
  C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/stdint.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/crtdefs.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stddef.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/stddef.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/allocator.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/new_allocator.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/new \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/functexcept.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception_defines.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/move.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cpp_type_traits.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/localefwd.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/clocale \
  C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/locale.h \
  C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/stdio.h \
  C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iosfwd \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cctype \
  C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/ctype.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ios_base.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/atomicity.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/pthread.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/errno.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/sys/types.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/process.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/corecrt_startup.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/limits.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/syslimits.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/limits.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/signal.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/pthread_signal.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/time.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/sys/timeb.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/_timeval.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/pthread_time.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/pthread_compat.h \
+ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/pthread_unistd.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/locale_classes.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/string \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/allocator.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/new_allocator.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/functexcept.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cpp_type_traits.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ostream_insert.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cxxabi_forced.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_iterator_base_types.h \
@@ -76,58 +116,19 @@ CMakeFiles/SO7.dir/Game.cpp.obj: \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_construct.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/string_view \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/functional_hash.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/hash_bytes.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/string_view.tcc \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/string_conversions.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdlib \
  C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/stdlib.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/limits.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/syslimits.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/limits.h \
  C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/stdlib.h \
  C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/malloc.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/mm_malloc.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/errno.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_abs.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdio \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cerrno \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/charconv.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/basic_string.tcc \
- C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Graphics.hpp \
- C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Window.hpp \
- C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/System.hpp \
- C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Config.hpp \
- C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/System/Clock.hpp \
- C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/System/Export.hpp \
- C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/System/Time.hpp \
- C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/System/Err.hpp \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ostream \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ios \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/exception \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception_ptr.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cxxabi_init_exception.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/typeinfo \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/nested_exception.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ios_base.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/atomicity.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/pthread.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/sys/types.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/process.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/corecrt_startup.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/signal.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/pthread_signal.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/time.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/sys/timeb.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/_timeval.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/pthread_time.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/pthread_compat.h \
- C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/pthread_unistd.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/locale_classes.h \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/locale_classes.tcc \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/system_error \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \

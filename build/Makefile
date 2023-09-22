@@ -152,6 +152,30 @@ Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SO7.dir\build.make CMakeFiles/SO7.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
+line.obj: line.cpp.obj
+.PHONY : line.obj
+
+# target to build an object file
+line.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SO7.dir\build.make CMakeFiles/SO7.dir/line.cpp.obj
+.PHONY : line.cpp.obj
+
+line.i: line.cpp.i
+.PHONY : line.i
+
+# target to preprocess a source file
+line.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SO7.dir\build.make CMakeFiles/SO7.dir/line.cpp.i
+.PHONY : line.cpp.i
+
+line.s: line.cpp.s
+.PHONY : line.s
+
+# target to generate assembly for a file
+line.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SO7.dir\build.make CMakeFiles/SO7.dir/line.cpp.s
+.PHONY : line.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
+	@echo ... line.obj
+	@echo ... line.i
+	@echo ... line.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

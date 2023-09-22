@@ -1,6 +1,5 @@
-CMakeFiles/SO7.dir/main.cpp.obj: \
- C:\Users\annab\OneDrive\Skrivebord\Programmering\ 2023\SO7\main.cpp \
- C:\Users\annab\OneDrive\Skrivebord\Programmering\ 2023\SO7\Game.h \
+CMakeFiles/SO7.dir/line.cpp.obj: \
+ C:\Users\annab\OneDrive\Skrivebord\Programmering\ 2023\SO7\line.cpp \
  C:\Users\annab\OneDrive\Skrivebord\Programmering\ 2023\SO7\line.h \
  C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Graphics.hpp \
  C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Window.hpp \
@@ -242,13 +241,4 @@ CMakeFiles/SO7.dir/main.cpp.obj: \
  C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Graphics/Glsl.inl \
  C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Graphics/Sprite.hpp \
  C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Graphics/Text.hpp \
- C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Graphics/VertexBuffer.hpp \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/functional \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_function.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/unordered_map \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/hashtable.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/hashtable_policy.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/enable_special_members.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unordered_map.h \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/array \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/compare
+ C:/Users/annab/OneDrive/SKRIVE~1/PROGRA~2/SO7/SFML/include/SFML/Graphics/VertexBuffer.hpp

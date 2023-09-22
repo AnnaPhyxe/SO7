@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SO7.dir/Game.cpp.obj"
   "CMakeFiles/SO7.dir/Game.cpp.obj.d"
+  "CMakeFiles/SO7.dir/line.cpp.obj"
+  "CMakeFiles/SO7.dir/line.cpp.obj.d"
   "CMakeFiles/SO7.dir/main.cpp.obj"
   "CMakeFiles/SO7.dir/main.cpp.obj.d"
   "SO7.exe"

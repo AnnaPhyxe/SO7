@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(SO7 VERSION 0.1.0)
 
-set(CPP_FILES main.cpp Game.cpp)
+set(CPP_FILES main.cpp Game.cpp line.cpp)
 
 set(SFML_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/SFML/include)
 set(SFML_LIBRARY_DIR ${CMAKE_SOURCE_DIR}/SFML/lib)
