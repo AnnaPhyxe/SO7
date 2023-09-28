@@ -54,13 +54,13 @@ void Game::initGraph(){
         Tegner grafen der findes et nulpunkt på 
     */
     graph.setPrimitiveType(sf::LineStrip);
-    for (double x = coordinateSystemMin; x <= coordinateSystemMax; x += 0.01) {
+    for(double x = coordinateSystemMin; x <= coordinateSystemMax; x += 0.01){
         double y = func(x);
 
         float graphX = (x - coordinateSystemMin) / (coordinateSystemMax - coordinateSystemMin) * videomode.width;
         float graphY = videomode.height - (y - coordinateSystemMin) / (coordinateSystemMax - coordinateSystemMin) * videomode.height;
 
-        graph.append(sf::Vertex(sf::Vector2f(graphX, graphY), sf::Color::Red));
+        graph.append(sf::Vertex(sf::Vector2f(graphX, graphY), sf::Color::Green));
     }
 }
 
@@ -101,7 +101,7 @@ double Game::root(double x0, double precision, std::function<double(double)> fun
 }
 
 void Game::drawText(){
-    initText("f(x) = log(x + 1)", 10.f, 10.f, 35.f, sf::Color::Red);
+    initText("f(x) = log(x + 1)", 10.f, 10.f, 35.f, sf::Color::Green);
     initText("Antal iterationer: " + std::to_string(iterationCount), 10.f, 70.f, 35.f, sf::Color::White);
     initText("Nulpunkt: " + std::to_string(root(x0, precision, func, func_derivative)), 10.f, 120.0f, 35.f, sf::Color::White);
     initText("x0: " + std::to_string(x0), 10.f, 170.f, 35.f, sf::Color::White);
