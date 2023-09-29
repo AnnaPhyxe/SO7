@@ -35,15 +35,15 @@ void Game::setup() {
     this->window = new sf::RenderWindow(this->videomode, "SO7");
     this->window->setFramerateLimit(60);
 
-    this->x0 = 1.5;
+    this->x0 = 0;
 
     precision = 1e-6;
-    func = [](double x) -> double { return log(x + 1);};
-    func_derivative = [](double x) -> double { return 1/(x + 1);};
+    func = [](double x) -> double { return log(x + 2);};
+    func_derivative = [](double x) -> double { return 1/(x+2);};
 
-    this->coordinateSystemMin = -10.0;
-    this->coordinateSystemMax = 10.0;
-    this->dist_lines_axis = 1.0;
+    this->coordinateSystemMin = -5;
+    this->coordinateSystemMax = 5;
+    this->dist_lines_axis = 1;
     this->iterationCount = 0;
 
     initGraph();
@@ -101,12 +101,14 @@ double Game::root(double x0, double precision, std::function<double(double)> fun
 }
 
 void Game::drawText(){
-    initText("f(x) = log(x + 1)", 10.f, 10.f, 35.f, sf::Color::Green);
+    initText("f(x) = log(x + 2)", 10.f, 10.f, 35.f, sf::Color::Green);
     initText("Antal iterationer: " + std::to_string(iterationCount), 10.f, 70.f, 35.f, sf::Color::White);
     initText("Nulpunkt: " + std::to_string(root(x0, precision, func, func_derivative)), 10.f, 120.0f, 35.f, sf::Color::White);
     initText("x0: " + std::to_string(x0), 10.f, 170.f, 35.f, sf::Color::White);
     initText("y", (videomode.width/2.0f) - 30.f, 5.f, 35.f, sf::Color::White);
     initText("x", videomode.width - 35.f, (videomode.height/2.f) + 20.f, 35.f, sf::Color::White);
+    initText("Akse-linjer afstand: " + std::to_string(dist_lines_axis), 10.f, videomode.height - 100.f, 35.f, sf::Color::White);
+    initText("Grid-size: " + std::to_string(coordinateSystemMax) + "x" + std::to_string(coordinateSystemMax), 10.f, videomode.height - 50.f, 35.f, sf::Color::White);
 }
 
 void Game::drawAxis(){

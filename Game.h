@@ -41,9 +41,9 @@ private:
 
     double x0;
     double precision;
-    double coordinateSystemMin; //bruges til at skalere koordinatsystemet
-    double coordinateSystemMax; //bruges til at skalere koordinatsystemet
-    double dist_lines_axis; //afstanden mellem linjerne på x-aksen og y-aksen
+    int coordinateSystemMin; //bruges til at skalere koordinatsystemet
+    int coordinateSystemMax; //bruges til at skalere koordinatsystemet
+    int dist_lines_axis; //afstanden mellem linjerne på x-aksen og y-aksen
     int iterationCount; //antallet af iterationer (bruges til at holde styr på antallet af iterationer)
 
     IterationData data; //objekt der repræsenterer iterationerne
