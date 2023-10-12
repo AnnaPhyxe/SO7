@@ -272,7 +272,11 @@ CMakeFiles/SO7.dir/Game.cpp.obj: C:/Users/annab/OneDrive/Skrivebord/Programmerin
   C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/modified_bessel_func.tcc \
   C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/poly_hermite.tcc \
   C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/poly_laguerre.tcc \
-  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/riemann_zeta.tcc
+  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/riemann_zeta.tcc \
+  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iomanip \
+  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/quoted_string.h \
+  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/sstream \
+  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/sstream.tcc
 
 CMakeFiles/SO7.dir/line.cpp.obj: C:/Users/annab/OneDrive/Skrivebord/Programmering\ 2023/SO7/line.cpp \
   C:/Users/annab/OneDrive/Skrivebord/Programmering\ 2023/SO7/line.h \
@@ -961,6 +965,8 @@ C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/errno.h:
 
 C:/Users/annab/scoop/apps/mingw/current/x86_64-w64-mingw32/include/process.h:
 
+C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/sstream:
+
 C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/limits.h:
 
 C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ostream.tcc:
@@ -1181,6 +1187,8 @@ C:/Users/annab/OneDrive/Skrivebord/Programmering\ 2023/SO7/SFML/include/SFML/Sys
 
 C:/Users/annab/OneDrive/Skrivebord/Programmering\ 2023/SO7/SFML/include/SFML/System/Vector2.hpp:
 
+C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/sstream.tcc:
+
 C:/Users/annab/OneDrive/Skrivebord/Programmering\ 2023/SO7/SFML/include/SFML/System/Vector2.inl:
 
 C:/Users/annab/OneDrive/Skrivebord/Programmering\ 2023/SO7/SFML/include/SFML/System/Vector3.hpp:
@@ -1318,5 +1326,9 @@ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/includ
 C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/legendre_function.tcc:
 
 C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/modified_bessel_func.tcc:
+
+C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iomanip:
+
+C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/quoted_string.h:
 
 C:/Users/annab/OneDrive/Skrivebord/Programmering\ 2023/SO7/line.cpp:

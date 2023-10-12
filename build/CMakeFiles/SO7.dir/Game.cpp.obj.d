@@ -270,4 +270,8 @@ CMakeFiles/SO7.dir/Game.cpp.obj: \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/modified_bessel_func.tcc \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/poly_hermite.tcc \
  C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/poly_laguerre.tcc \
- C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/riemann_zeta.tcc
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/riemann_zeta.tcc \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iomanip \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/quoted_string.h \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/sstream \
+ C:/Users/annab/scoop/apps/mingw/current/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/sstream.tcc

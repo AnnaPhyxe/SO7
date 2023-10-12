@@ -2,6 +2,8 @@
 #include <iostream>
 #include <cmath>
 #include <unordered_map>
+#include <iomanip>
+#include <sstream>
 
 using namespace std;
 
@@ -35,14 +37,15 @@ void Game::setup() {
     this->window = new sf::RenderWindow(this->videomode, "SO7");
     this->window->setFramerateLimit(60);
 
-    this->x0 = 0;
+    this->x0 = -1.5;
+    this->number_of_decimals_result = 10;
 
-    precision = 1e-6;
-    func = [](double x) -> double { return log(x + 2);};
-    func_derivative = [](double x) -> double { return 1/(x+2);};
+    precision = 1e-12;
+    func = [](double x) -> double { return 3.56*x*x + 2.65*x - 0.54;};
+    func_derivative = [](double x) -> double { return 7.12*x + 2.65;};
 
-    this->coordinateSystemMin = -5;
-    this->coordinateSystemMax = 5;
+    this->coordinateSystemMin = -8;
+    this->coordinateSystemMax = 8;
     this->dist_lines_axis = 1;
     this->iterationCount = 0;
 
@@ -101,9 +104,15 @@ double Game::root(double x0, double precision, std::function<double(double)> fun
 }
 
 void Game::drawText(){
-    initText("f(x) = log(x + 2)", 10.f, 10.f, 35.f, sf::Color::Green);
-    initText("Antal iterationer: " + std::to_string(iterationCount), 10.f, 70.f, 35.f, sf::Color::White);
-    initText("Nulpunkt: " + std::to_string(root(x0, precision, func, func_derivative)), 10.f, 120.0f, 35.f, sf::Color::White);
+    initText("f(x) = 3,56x^2 + 2,65x - 0,54 ", 10.f, 10.f, 35.f, sf::Color::Green);
+    initText("Antal beregninger: " + std::to_string(iterationCount), 10.f, 70.f, 35.f, sf::Color::White);
+
+    double result = root(x0, precision, func, func_derivative);
+    std::ostringstream ss;
+    ss << std::fixed << std::setprecision(number_of_decimals_result) << result;
+    std::string resultString = ss.str();
+    initText("Nulpunkt: " + resultString, 10.f, 120.0f, 35.f, sf::Color::White);
+
     initText("x0: " + std::to_string(x0), 10.f, 170.f, 35.f, sf::Color::White);
     initText("y", (videomode.width/2.0f) - 30.f, 5.f, 35.f, sf::Color::White);
     initText("x", videomode.width - 35.f, (videomode.height/2.f) + 20.f, 35.f, sf::Color::White);
