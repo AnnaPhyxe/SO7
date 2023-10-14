@@ -181,3 +181,36 @@ void Game::render() {
 
     window->display();
 }
+
+
+
+
+
+
+
+/*
+double Game::root_iteration(double x0, double precision, std::function<double(double)> func, std::function<double(double)> func_derivative) {
+    while (std::abs(func(x0)) > precision) {
+        if (memo.find(x0) != memo.end()) {
+            return memo[x0];
+        }
+
+        data.x = x0;
+        data.y = func(x0);
+
+        double tangentSlope = func_derivative(x0);
+        double tangentLength = std::abs(data.y / tangentSlope);
+        data.tangentX1 = x0 - tangentLength;
+        data.tangentY1 = data.y - tangentSlope * tangentLength;
+        data.tangentX2 = x0 + tangentLength;
+        data.tangentY2 = data.y + tangentSlope * tangentLength;
+        iterations.push_back(data);
+        iterationCount++;
+
+        x0 -= func(x0) / func_derivative(x0);
+        memo[x0] = x0;
+    }
+
+    return memo[x0];
+}
+*/

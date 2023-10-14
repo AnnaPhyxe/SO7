@@ -55,6 +55,7 @@ private:
     void initText(const std::string& text, double pos_x, double pos_y, int fontSize, const sf::Color& color);
 
     double root(double x0, double precision, std::function<double(double)> func, std::function<double(double)> func_derivative); //newtons metode
+    //double root_iteration(double x0, double precision, std::function<double(double)> func, std::function<double(double)> func_derivative);
 
     void drawText();
     void drawAxis();    
